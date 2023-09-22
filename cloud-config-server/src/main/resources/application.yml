@@ -1,0 +1,25 @@
+server:
+  port: 8888
+  
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://BitRepublic@bitbucket.org/bitrepublic/config-server.git
+          username: bitrepublic
+          password: ATBBP8P2yTAzF9FLLYBj4heAgCvKFDF8EDD5
+          default-label: main
+  application:
+    name: CLOUD-CONFIG-SERVER
+    
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+    
+
+    
+
+
+

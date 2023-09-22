@@ -1,0 +1,14 @@
+
+spring:
+  config:
+    import:
+      optional:configserver:http://localhost:8888
+  application:
+    name: CLIENT-SERVICE
+  
+      
+server:
+  port: 9940
+  
+  
+#eureka config is setup in bitbucket repo
